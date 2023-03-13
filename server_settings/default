@@ -1,0 +1,36 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	server_name _;
+        return 444;
+}
+
+server {
+	server_name demo.human-hub.net;
+
+	location / {
+		uwsgi_pass unix:///run/uwsgi/uwsgi.sock;
+                include uwsgi_params;
+	}
+
+	location /static/ {
+		root /www/Human-hub.net/;
+	}
+
+	location /media/ {
+		root /www/Human-hub.net/;
+	}
+
+}
+
+server {
+	server_name human-hub.net;
+
+	root /var/www/html;
+
+	index index.html index.htm index.nginx-debian.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}

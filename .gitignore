@@ -1,0 +1,11 @@
+/borntovenv
+/static
+/media
+*.log
+.env
+.idea
+*.sqlite3
+.bash_profile
+.DS_Store
+*.env
+

@@ -1,0 +1,39 @@
+{% load i18n %}
+<footer class="text-center text-lg-start bg-light text-muted mt-2">
+  <!-- Section: Info  -->
+  <section class="d-flex justify-content-center p-2 border-top footer-border-color-black">
+          <a href="{% url 'info:discounts' %}" title="{% trans 'Discounts' %}">
+            <button type="button" style="width: auto;" class="btn-footer btn-outline-dark rounded-0 mb-3 mt-3 btn-sm mx-3">{% trans 'Discounts' %}</button></a>
+          <a href="{% url 'info:sizing' %}" title="{% trans 'Sizing' %}">
+            <button type="button" style="width: auto;" class="btn-footer btn-outline-dark rounded-0 mb-3 mt-3 btn-sm mx-3">{% trans 'Sizing' %}</button></a>
+          <a href="{% url 'info:shipping' %}" title="{% trans 'SHipping' %}">
+            <button type="button" style="width: auto;" class="btn-footer btn-outline-dark rounded-0 mb-3 mt-3 btn-sm mx-3">{% trans 'Shipping' %}</button></a>
+          <a href="{% url 'info:refund' %}" title="{% trans 'Refund' %}">
+            <button type="button" style="width: auto;" class="btn-footer btn-outline-dark rounded-0 mb-3 mt-3 btn-sm mx-3">{% trans 'Refund' %}</button></a>
+  </section>
+  <!-- Section: Info  -->
+  <!-- Section: About project  -->
+  <div class="row">
+    <div class="col-xs-8 col-sm-7 col-md-8 col-lg-7 text-center mx-auto mt-1">
+      <section class="col-10 d-flex justify-content-center mx-auto p-1 border-top footer-border-color-black">
+            <a class="nav-link footer_button" href="{% url 'info:contacts' %}" title="{% trans 'Contacts' %}">{% trans 'Contacts' %}</a>
+            <a class="nav-link footer_button" href="{% url 'info:about' %}" title="{% trans 'About project' %}">{% trans 'About project' %}</a>
+            <a class="nav-link footer_button" href="{% url 'info:terms' %}" title="{% trans 'Terms' %}">{% trans 'Terms' %}</a>
+      </section>
+    </div>
+  </div>
+  <!-- Section: About project-->
+  <!-- Section: Social  -->
+  <section class="d-flex justify-content-center p-2">
+      <a class="mx-5" href="https://twitter.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" width="24px" height="24px">
+          <path d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"/></svg></a>
+      <a class="mx-5" href="https://www.facebook.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" width="24px" height="24px">
+          <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg></a>
+      <a class="mx-5" href="https://www.instagram.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" width="24px" height="24px">
+          <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg></a>
+  </section>
+  <!-- Section: Social-->
+</footer>
